@@ -4,6 +4,7 @@ const userInfoForm = document.getElementById('user-info');
 userInfoForm.addEventListener('submit', function(event){
     event.preventDefault();
 
+    
     const userInfo = {
         name: username.value
     };
