@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEATHER QUIZ!!!!</title>
+</head>
+<body>
+    <header><h1>Hi <span id="name"></span>! Fill this out to find out your secret weather identity!</h1></header>
+    <main>
+        <form id="quiz-form">
+            <fieldset>
+                <legend>What Is Your Energy Level?</legend>
+                <input type="range" min="0" max="25" id="energy">
+                <span id="energy-level"></span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which Of These Colors Do You Like Best?</legend>
+
+                <label for="yellow">Yellow</label>
+                <input type="radio" name="color" id="yellow" value="yellow">
+                
+                <label for="grey">Grey</label>
+                <input type="radio" name="color" id="grey" value="grey">
+
+                <label for="even-more-grey">Even More Grey</label>
+                <input type="radio" name="color" id="even-more-grey" value="even-more-grey">
+
+                <label for="blue">Blue</label>
+                <input type="radio" name="color" id="blue" value="blue">
+
+                <label for="rainbow">Rainbow</label>
+                <input type="radio" name="color" id="rainbow" value="rainbow">
+            </fieldset>
+
+            <fieldset>
+                <legend>What Is Your Dream Vacation?</legend>
+
+                <label for="rain-forest">Rain Forest</label>
+                <input type="radio" name="vacation" id="rain-forest" value="rain-forest">
+
+                <label for="italy">Italy</label>
+                <input type="radio" name="vacation" id="italy" value="italy">
+
+                <label for="beach">The Beach</label>
+                <input type="radio" name="vacation" id="beach" value="beach">
+
+                <label for="alps">The Alps</label>
+                <input type="radio" name="vacation" id="alps" value="alps">
+            </fieldset>
+            <button>FIND OUT NOW</button>
+        </form>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
