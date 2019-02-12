@@ -7,16 +7,16 @@ function weatherResult(scorecard) {
     if(polarVortex > heatwave 
         && polarVortex > rainbow
         && polarVortex > cloudyMeatballs){
-        return 'polarVortex';
+        return 'You are a Polar Vortex!';
     }
     if(heatwave > rainbow
         && heatwave > cloudyMeatballs) {
-        return 'heatwave';
+        return 'You are a Heatwave!';
     }
     if(rainbow > cloudyMeatballs) {
-        return 'rainbow';
+        return 'You are a Double Rainbow!';
     }
-    return 'cloudyMeatballs';
+    return 'You are Cloudy with a Chance of Meatballs!';
 }
 
 export default weatherResult;

@@ -4,7 +4,12 @@ import scoreEnergyLevel from './energy-result.js';
 
 const quizForm = document.getElementById('quiz-form');
 const energyLevel = document.getElementById('energy');
+const userName = document.getElementById('name');
 
+const jsonString = window.localStorage.getItem('userInfo');
+const user = JSON.parse(jsonString);
+
+userName.textContent = user.name;
 
 
 quizForm.addEventListener('submit', function(event){
@@ -22,17 +27,19 @@ quizForm.addEventListener('submit', function(event){
         vacation: formData.get('vacation')
     };
 
-        // weatherResult(scorecard)
     const scorecard = {
         polarVortex: 0,
         heatwave: 0,
         rainbow: 0,
         cloudyMeatballs: 0
-    };
-
+    };  
+    
     scoreEnergyLevel(answers.energy, scorecard);
-    console.log(scorecard);
+    const finalResult = weatherResult(scorecard);
+  
+    //will always just be one result! 
+    window.localStorage.setItem('finalResult', finalResult);
 
-    //window.location = 'results.html';
-    console.log(answers);
+    window.location = 'results.html';
+    
 });
